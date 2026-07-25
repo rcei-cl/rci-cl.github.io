@@ -1,0 +1,53 @@
+# Configuración del sitio — Red Chilena de Ética en Investigación (RCEI)
+
+title: Red Chilena de Ética en Investigación
+short_title: RCEI
+tagline: Comités Ético-Científicos e instituciones de investigación de Chile
+description: >-
+  La Red Chilena de Ética en Investigación (RCEI) reúne a los Comités
+  Ético-Científicos e instituciones de investigación del país para promover
+  la colaboración, el fortalecimiento de las capacidades de evaluación ética
+  y las buenas prácticas en investigación.
+lang: es-CL
+
+url: "https://rcei.cl"
+baseurl: ""
+
+email: contacto@rcei.cl
+
+# Navegación principal (usada en _includes/header.html)
+nav:
+  - title: Inicio
+    url: /
+  # - title: Quiénes somos
+  #   url: /quienes-somos/
+  # - title: Comités Ético-Científicos
+  #   url: /comites/
+  # - title: Contacto
+  #   url: /contacto/
+
+# Plugins soportados por GitHub Pages
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+sass:
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - node_modules
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
